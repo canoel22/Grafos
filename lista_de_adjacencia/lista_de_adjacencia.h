@@ -9,11 +9,24 @@
 /********************************************** ESTRUTURAS *********************************************************/
 
 typedef struct grafo{
-    int qtd; 
-    struct no *raiz;
+    int qtd_nos; 
+    struct no **adj;
 } Grafo;
 
 typedef struct no{
     int valor; 
     struct no *prox;
 } No;
+
+/********************************************** FUNÇÕES *********************************************************/
+
+Grafo* criaGrafo(int qtd_nos);
+No* criaNo(int valor);
+
+void adicionaNo(Grafo* grafo);
+void adicionaAresta(Grafo* grafo, int x, int y);
+
+void removeNo(Grafo* grafo, int x, int y);
+void removeAresta(Grafo* grafo, int x, int y);
+
+void printaGrafo(Grafo* grafo);

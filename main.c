@@ -4,33 +4,33 @@
 
 
 void main() {
-    Graph* g = newGraph(9);
+    Grafo* grafo = criaGrafo(9);
 
-    add_edge(g, 0, 1);
-    add_edge(g, 0, 2);
+    adicionaAresta(grafo, 0, 1);
+    adicionaAresta(grafo, 0, 2);
 
-    add_edge(g, 1, 0);
-    add_edge(g, 1, 3);
-    add_edge(g, 1, 4);
-    add_edge(g, 1, 5);
+    adicionaAresta(grafo, 1, 0);
+    adicionaAresta(grafo, 1, 3);
+    adicionaAresta(grafo, 1, 4);
+    adicionaAresta(grafo, 1, 5);
 
-    add_edge(g, 2, 0);
-    add_edge(g, 2, 6);
+    adicionaAresta(grafo, 2, 0);
+    adicionaAresta(grafo, 2, 6);
 
-    add_edge(g, 3, 1);
-    add_edge(g, 4, 1);
+    adicionaAresta(grafo, 3, 1);
+    adicionaAresta(grafo, 4, 1);
 
-    add_edge(g, 5, 1);
-    add_edge(g, 5, 7);
+    adicionaAresta(grafo, 5, 1);
+    adicionaAresta(grafo, 5, 7);
 
-    add_edge(g, 6, 2);
-    add_edge(g, 6, 8);
+    adicionaAresta(grafo, 6, 2);
+    adicionaAresta(grafo, 6, 8);
 
-    add_edge(g, 7, 5);
+    adicionaAresta(grafo, 7, 5);
 
-    add_edge(g, 8, 6);
+    adicionaAresta(grafo, 8, 6);
 
-    print_graph(g);
+    printaGrafo(g);
 
-    depth_first_search(g);
+    dfs(g); 
 }
