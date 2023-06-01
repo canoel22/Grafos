@@ -30,7 +30,7 @@ void main() {
 
     adicionaAresta(grafo, 8, 6);
 
-    printaGrafo(g);
+    printaGrafo(grafo);
 
-    dfs(g); 
+    dfs(grafo); 
 }
