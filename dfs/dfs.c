@@ -14,7 +14,7 @@ void visitaDFS(Grafo *grafo, int u, int *d, int *f, int *pi, enum Cor *cor){
 
         if (cor[v] == Branco) {
             pi[v] = u;
-            dfs_visit(grafo, v, d, f, pi, cor);
+            visitaDFS(grafo, v, d, f, pi, cor);
         }
     }
 
@@ -38,7 +38,7 @@ void dfs(Grafo* grafo) {
 
     for (int u = 0; u < grafo->qtd_nos; u++) { //visita os nós
         if (cor[u] == Branco)
-            dfs_visit(grafo, u, d, f, pi, cor);
+            visitaDFS(grafo, u, d, f, pi, cor);
     }
 
 

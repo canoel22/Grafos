@@ -1,21 +1,16 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-#define NAO_PONDERADA_E_NAO_DIRECIONADA 0
-#define PONDERADA_E_NAO_DIRECIONADA 1
-#define NAO_PONDERADA_E_DIRECIONADA 2
-#define DIRECIONADA_E_PONDERADA 3
-
 /********************************************** ESTRUTURAS *********************************************************/
 
-typedef struct grafo{
+typedef struct _grafo{
     int qtd_nos; 
-    struct no **adj;
+    struct _no **adj;
 } Grafo;
 
-typedef struct no{
+typedef struct _no{
     int valor; 
-    struct no *prox;
+    struct _no *prox;
 } No;
 
 /********************************************** FUNÇÕES *********************************************************/
