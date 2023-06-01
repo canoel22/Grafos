@@ -1,17 +1,20 @@
+#ifndef _lista_de_adjacencia_h
+#define _lista_de_adjacencia_h
+
 #include <stdio.h>
 #include <stdlib.h>
 
 /********************************************** ESTRUTURAS *********************************************************/
 
-typedef struct _grafo{
-    int qtd_nos; 
-    struct _no **adj;
-} Grafo;
-
 typedef struct _no{
     int valor; 
     struct _no *prox;
 } No;
+
+typedef struct grafo{
+    int qtd_nos; 
+    No **adj;
+} Grafo;
 
 /********************************************** FUNÇÕES *********************************************************/
 
@@ -25,3 +28,5 @@ void removeNo(Grafo* grafo, int x, int y);
 void removeAresta(Grafo* grafo, int x, int y);
 
 void printaGrafo(Grafo* grafo);
+
+#endif

@@ -1,6 +1,7 @@
 #include "./lista_de_adjacencia/lista_de_adjacencia.h"
-#include "./bfs/bfs.h"
 #include "./dfs/dfs.h"
+#include "./bfs/bfs.h"
+
 
 
 void main() {
